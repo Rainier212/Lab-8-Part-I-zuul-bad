@@ -24,3 +24,13 @@ project, and how to fix them.
 
 The project 'zuul-better' contains a version of this project with better
 designed class structure. It includes the fixes discussed in the book.
+
+ANSWERS TO QUESTIONS:
+
+9. It returns a set of keys that are in the HashMap.
+
+13. We change the currentRoom and also the available exits.
+
+17.Yes, because I would have to implement the command's behavior inthe processCommand method in Game class.
+
+18. I do not understand the question.
