@@ -37,6 +37,28 @@ public class Room
         return null;
     }
     
+    /** Return a description of the room's exits,
+     * for example, "Exits: north west".
+     * @return A description of the available exits. 
+     */
+    public String getExitString()
+    {
+        String exits = "Exits: ";
+        if(getExit("north") != null) {
+            exits +="north ";
+        }
+        if(getExit("east") != null) {
+            exits +="east ";
+        }
+        if(getExit("south") != null) {
+            exits +="south ";
+        }
+        if(getExit("west") != null) {
+            exits +="west ";
+        }
+        return exits;
+    }
+    
     /**
      * Create a room described "description". Initially, it has no exits. 
      * "description" is something like "a kitchen" or "an open court yard".
